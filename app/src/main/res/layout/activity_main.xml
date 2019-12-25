@@ -38,16 +38,18 @@
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="110dp"
+        android:cursorVisible="true"
         android:ems="10"
+        android:hint="@string/peso_a"
         android:importantForAccessibility="no"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:text="@string/peso_a"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/peso_q"
         app:layout_constraintStart_toEndOf="@+id/peso_q"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor"
+        android:textCursorDrawable="@null" />
 
     <TextView
         android:id="@+id/altura_q"
@@ -69,15 +71,16 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="92dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="@string/altura_a"
-        android:textSize="16sp"
+        android:hint="@string/altura_a"
         android:importantForAccessibility="no"
         android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/altura_q"
         app:layout_constraintStart_toEndOf="@+id/altura_q"
         app:layout_constraintTop_toBottomOf="@+id/i_peso"
-        tools:ignore="LabelFor"/>
+        tools:ignore="LabelFor"
+        android:textCursorDrawable="@null"/>
 
     <Button
         android:id="@+id/btnCalcular"
