@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         final TextView imcResultado = findViewById(R.id.resultado);
         final EditText i_peso = findViewById(R.id.i_peso);
         final EditText i_altura = findViewById(R.id.i_altura);
+        final TextView situacao_peso = findViewById(R.id.situacao);
+
 
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,8 +35,17 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("CalculadoraIMC", "A altura é " + altura);
 
                 double imc = CalcularIMC(altura,peso);
+                if (imc > 25) {
+                    situacao_peso.setText(R.string.situacao1);
+                }
+                else if(imc <= 25 && imc > 18){
+                    situacao_peso.setText(R.string.situacao2);
+                }
+                else{
+                    situacao_peso.setText(R.string.situacao3);
+                }
                 Log.d("CalculadoraIMC", "O IMC calculado é: " + imc);
-
+                situacao_peso.setVisibility(View.VISIBLE);
                 apresentarResult.setText(R.string.resultado);
                 String imcToText = String.valueOf(imc);
                 imcResultado.setText(imcToText);

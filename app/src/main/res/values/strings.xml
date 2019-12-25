@@ -7,4 +7,7 @@
     <string name="altura_a">Informe a sua altura</string>
     <string name="btn_calcular">Calcular IMC</string>
     <string name="resultado">Seu IMC é:</string>
+    <string name="situacao1">Você está com sobrepeso.</string>
+    <string name="situacao2">Você está com peso saudável!</string>
+    <string name="situacao3">Você está abaixo do peso.</string>
 </resources>
